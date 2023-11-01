@@ -1,0 +1,140 @@
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+ul:only-child{
+  padding: 0px !important;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__pageInfo{
+  display: flex;
+  gap: 50px;
+}
+.container__treeView{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 500px;
+  max-height: 500px;
+  width: 70%;
+  overflow: scroll;
+}
+
+.container__treeView_list-main{
+  padding-left: 10px;
+  margin: 0px;
+  border-left: 1px solid #BFBFBF;
+}
+
+.container__treeView_list-secondary{
+  display: flex;
+  position: relative;
+}
+
+.container__treeView_nested-only{
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  padding: 0px;
+  padding-left: 10px;
+  border-left: 1px solid #BFBFBF;
+}
+
+.container__treeView_nested-only > .container__treeView_array{
+  border-left: 1px solid #BFBFBF;
+  padding-left: 10px;
+} 
+
+.container__treeView_array-empty::before{
+  align-self: flex-start;
+  color:#F2CAB8;
+  content: "[";
+}
+
+.container__treeView_array-empty::after{
+  align-self: flex-start;
+  color:#F2CAB8;
+  content: "]";
+}
+
+.container__treeView_array-full{
+  text-align: left;
+  padding: 0px;
+  padding-left: 10px;
+  margin-top: 24px;
+  border-left: 1px solid #BFBFBF;
+}
+.container__treeView_array-full::before{
+  margin-left: -5px;
+  color:#F2CAB8;
+  content: "[";
+}
+
+.container__treeView_array-full::after{
+  margin-left: -5px;
+  color:#F2CAB8;
+  content: "]" ;
+}
+
+.container__treeView_node{
+  color:#4E9590;
+}
+.container__treeView_node::after{
+  content: ":";
+}
+
+.container__treeView_leaf{
+  color:#252525;
+  text-align: left;
+}
+
+.container__treeView_nested{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px !important;
+}
+
+.container__treeView_array{
+  display: flex;
+
+}
+.container__treeView_array-column{
+  display: flex;
+  flex-direction: column;
+}
+.container__treeView_array-index{
+color: #BFBFBF;
+text-align: left;
+}
+
+.container__treeView_array-empty{
+  padding: 0px 0px 0px 5px;
+}
+
+
+.curly_brackets-open{
+  text-align: left;
+
+}
+.curly_brackets-close{
+  text-align: left;
+  margin-left: -5px;
+}
+
+.error{
+  color: #BF0E0E;
+}
