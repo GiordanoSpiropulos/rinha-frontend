@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "preact/hooks";
 import "./app.css";
-import { isArray, isJSPrimitive } from "./helper";
-import React from "preact/compat";
+import { isArray } from "./helper";
+
 import JsonTree from "./components/JsonTree/JsonTree";
 
 export function App() {
